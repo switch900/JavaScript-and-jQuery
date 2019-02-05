@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		#div1{
+			height: 100px;
+			width: 100px;
+			background-color: #6495ed;
+			}
+	</style>
+	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>COMP 2015 - Lab 3</title>
+</head>
+
+<body>
+	<h1>Andrew Hewitson</h1>
+	
+	<p><button id="toggle">Panic Button</button></p>
+
+	<div id = "div1"></div>
+	
+	<div id = "div2">
+		<p>This is the first paragraph.</p>
+		<p>This is the second paragraph.</p>
+		<p>This is the third paragraph.</p>
+	</div>
+
+	<script>
+	//part 1
+	const colors = ['#9A9738','#716A4D','#FF6F61'];// Beluga, Martini Olive and Living Coral
+	
+	//part 2
+	let part2Divs = document.querySelectorAll('#div2 p');  
+	
+	for (let i = 0; i<part2Divs.length; i++){
+		part2Divs[i].onmouseenter = function(){
+			part2Divs[i].style.backgroundColor = colors[i];
+			}
+		part2Divs[i].onmouseleave = function(){
+			part2Divs[i].style.backgroundColor = 'white';
+			}
+	}
+	
+	//part 3
+	let button = document.getElementById('toggle');
+	let div1 = document.getElementById('div1');
+	
+	button.onclick = function(){
+		div1.style.height = '200px';
+	}
+	
+	//part 4
+	window.onresize = function(){
+		let windowWidth = window.innerWidth;
+		let myH1 = document.getElementsByTagName('h1')[0];
+		
+		if(windowWidth < 800){
+			myH1.style.color = 'red';
+		}
+		else{
+			myH1.style.color = 'black';
+		}
+	}
+	
+	
+	
+	
+	</script>
+
+</body>
+</html>
