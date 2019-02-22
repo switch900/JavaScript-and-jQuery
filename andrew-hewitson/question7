@@ -1,0 +1,11 @@
+function questionSeven(){
+	var bookObject = {
+		title: "The Art of the Deal",
+		author:"Donald Trump",
+		yearPublished:1987,
+		readBook: function(){
+			console.log("I know words because I read \"" + this.title + "\" by "+ this.author + " which was written in "+ this.yearPublished + ".");
+			}
+		};		
+	return bookObject;
+}

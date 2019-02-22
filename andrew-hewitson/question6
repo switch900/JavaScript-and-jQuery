@@ -1,0 +1,15 @@
+var header = document.createElement("h2");
+var headerText = document.createTextNode("DOM Scripting");
+header.appendChild(headerText);
+document.body.appendChild(header);
+
+var paragraph = document.createElement("P");
+paragraph.style.width = "200px";
+paragraph.style.height = "200px";
+paragraph.style.background = 'red';
+document.body.appendChild(paragraph);
+
+var image = document.createElement("img");
+image.src = "a.jpg";
+image.id = "img3";
+paragraph.appendChild(image);

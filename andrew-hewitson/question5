@@ -1,0 +1,7 @@
+function questionFive(){
+	setTimeout(leftFunction, 3000);
+	}
+	
+function leftFunction() {
+  document.getElementById("q5-img").style.left = "100px";
+}

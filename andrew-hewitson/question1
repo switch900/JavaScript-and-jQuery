@@ -1,0 +1,5 @@
+document.getElementsByTagName("img")[0].width = '100';
+	 
+function questionOne(){
+	return ['window', 'document','console'];
+ }

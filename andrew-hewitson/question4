@@ -1,0 +1,17 @@
+let part2divs = document.querySelectorAll('#div2 p');
+
+for (let i = 0; i<part2divs.length; i++){
+	part2divs[i].onclick = function(){		
+		part2divs[i].classList.add("clicked");
+		part2divs[i].style.backgroundColor = 'yellow';
+	}
+} 
+
+for (let i = 0; i<part2divs.length; i++){
+	part2divs[i].onmouseover = function(){
+		part2divs[i].style.fontStyle = 'italic';		
+	}
+	part2divs[i].onmouseleave = function(){
+		part2divs[i].style.fontStyle = 'normal';		
+	}
+} 

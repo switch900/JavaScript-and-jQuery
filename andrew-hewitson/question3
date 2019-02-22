@@ -1,0 +1,10 @@
+function changeHref(){
+let allLinks = document.getElementsByTagName("a");
+		for (var x = 0; x<allLinks.length; x++) {	
+			 if(allLinks[x].href.includes('bcit')){
+				allLinks[x].href = '#';
+			}
+		}
+}
+
+changeHref();
